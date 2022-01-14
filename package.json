@@ -1,0 +1,20 @@
+{
+  "name": "node-red-contrib-smart-prices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "node-red": {
+    "nodes": {
+      "smart-prices": "lib/smart-prices-nr.js",
+      "nordpool": "lib/nordpool-nr.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martti Kuldma",
+  "license": "ISC",
+  "dependencies": {
+    "luxon": "^2.3.0"
+  }
+}
