@@ -18,6 +18,7 @@
   "author": "Martti Kuldma",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.24.0",
     "luxon": "^2.3.0"
   }
 }
