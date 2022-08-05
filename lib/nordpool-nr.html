@@ -5,8 +5,8 @@
         defaults: {
             countryCode: {value:"EE"},
             name: {value:""},
-            subtractFromCountryCode: {value:"SYS1"},
-            subtractFees: {value:0.0}
+            subtractCountryCode: {value:"SYS1"},
+            addFees: {value:0.0}
         },
         inputs:1,
         outputs:1,
@@ -25,14 +25,14 @@
         <input type="text" id="node-input-countryCode" placeholder="countryCode">
     </div>
     <div class="form-row">
-        <label for="node-input-subtract-from-countryCode"><i class="fa fa-tag"></i> Subtract price from this price: Two character Country Code for NordPool API
+        <label for="node-input-subtractCountryCode"><i class="fa fa-tag"></i> Two character Country Code for NordPool API used for subtracting price.
         </label>
-        Fetches a matching hourly page number to use from <a href="https://www.nordpoolgroup.com/api/marketdata/queries">NordPool API</a>.
-        <input type="text" id="node-input-subtract-from-countryCode" placeholder="subtractFromCountryCode">
+        Fetches a matching hourly page number to use from <a href="https://www.nordpoolgroup.com/api/marketdata/queries">NordPool API</a> and that price is subtracted from the regular price.
+        <input type="text" id="node-input-subtractCountryCode" placeholder="subtractCountryCode">
     </div>
     <div class="form-row">
-        <label for="node-input-subtract-fees"><i class="fa fa-tag"></i> Subtract fees (EUR/MWh)</label>
-        <input type="number" id="node-input-subtract-fees" placeholder="subtractFees">
+        <label for="node-input-addFees"><i class="fa fa-tag"></i> Additional fees (EUR/MWh)</label>
+        <input type="number" id="node-input-addFees" placeholder="addFees">
     </div>
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
